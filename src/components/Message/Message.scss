@@ -1,0 +1,138 @@
+.description {
+    background-image: url('../../../public/images/Description/bg2.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px 134px 0 70px;
+    position: relative;
+    min-height: 100vh;
+
+  &__title {
+    margin-top: 70px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 2px;
+    line-height: 31px;
+    margin-bottom: 65px;
+    font-weight: 400;
+  }
+
+  &__background {
+    position: absolute;
+    height: 320px;
+    background-color: #fff;
+    padding: 40px;
+    top: 33%;
+    left: 120px;
+    right: 125px;
+    border-radius: 50px;
+    z-index: 1;
+    box-shadow: 5px 8px 233px 0 rgba(157, 185, 198, 0.39);
+  }
+
+  &__wrapper {
+    direction: rtl;
+    padding-left: 57px;
+    overflow-y: scroll;
+    max-height: 980px;
+
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      box-shadow: inset 10px 10px 5px #000;
+      border-radius: 9px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 104px;
+      background-image: url('../../../public/images/Description/btn.png');
+      background-size: cover;
+      border-radius: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    text-align: left;
+    max-height: 300px;
+    position: relative;
+    z-index: 1;
+    padding-right: 20px;
+    line-height: 32px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .decorative-image-desc {
+    position: absolute;
+    transform: translate(100px, 100px);
+    opacity: 0;
+    pointer-events: none;
+
+  }
+
+.imageDscr1 {
+    width: 550px;
+    top: 12%;
+    right: -16%;
+    transition: all 3s 0.5s ease;
+  }
+  
+  .imageDscr2 {
+    width: 150px;
+    top: 55%;
+    right: -0px;
+    transition: all 3.5s 0.6s ease;
+  }
+  
+  .imageDscr3{
+    width: 400px;
+    top: 12%;
+    right: -16%;
+    transition: all 3.5s 0.6s ease;
+  }
+  
+  .imageDscr4 {
+    width: 100px;
+    top: 70%;
+    right: 0%;
+    transition: all 3.8s 1.1s ease;
+  }
+  
+  .imageDscr5 {
+    width: 700px;
+    top: 13%;
+    right: -10%;
+    transition: all 4s 1.3s ease;
+  }
+
+
+  .start-animation {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
+  .stop-animation {
+    transition: none;
+  }
+  
+  @keyframes move-and-appear {
+    0% {
+      opacity: 0;
+      transform: translate(50px, 100px);
+    }
+  
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+}
+}

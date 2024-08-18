@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    padding: 33px 0 0 95px;
+  }
+  
+  .header__home-icon {
+    margin-right: 21px;
+    width: 27px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .header__project {
+    border-left: 1px solid #282828;
+    padding-left: 21px;
+    height: 28px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
